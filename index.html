@@ -7,17 +7,33 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Jquery  -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- reset -->
+  <link rel="stylesheet" href="./assets/css/reset.css">
   <!-- animate.css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <!-- Style -->
   <link type='text/css' rel="stylesheet" href="./assets/css/style.css">
-  <!--  -->
+  <!-- js partical background -->
+  <link rel="stylesheet" href="./assets/css/particles.css">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- <script src="./assets/javascript/particles.js"></script> -->
   <title>Trivia Game</title>
 </head>
 
 <body>
+  <div id="particles-js" class="gradient">
+    <!-- dont put anything in here. interacts weirdly -->
+  </div>
+
+  <head class="bg-hallow">
+    <h1 class="title ">Totally Trivial Trivia!</h1>
+  </head>
   <!-- title block -->
-  <h1>Totally Trivial Trivia!</h1>
+  <div id="starter"></div>
+  <!--  -->
+
   <!-- my timer -->
   <div id="" class="set">Time Remaining:
     <span id="timer" class="set"></span>
@@ -32,7 +48,9 @@
   <!--  -->
 
   <!-- scripts -->
-  <script src="./assets/javascript/script.js"></script>
+  <script src="./assets/javascript/particles.js"></script>
+  <script src="./assets/javascript/qNa.js"></script>
+  <script src="./assets/javascript/app.js"></script>
 </body>
 
 </html>
