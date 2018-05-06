@@ -3,40 +3,45 @@ var questions = [
   {
     qid : 1,
     question: 'What is a mock question?' ,
-    answer: 'Mock answer 1 ',
-    fakeAns1: 'Mock answer 2 ',
-    fakeAns2: 'Mock answer 3 ',
-    fakeAns3: 'Mock answer 4 '
+    answerList: {
+      a: 'Mock answer 1 ',
+      b: 'Mock answer 2 ',
+      c: 'Mock answer 3 ',
+      d: 'Mock answer 4 '
+    },
+    answer:'Mock answer 3 '
   },
   {
-    qid : 2,
+    qid : 1,
     question: 'What is a mock question?' ,
-    fakeAns1: 'Mock answer 1 ',
-    fakeAns2: 'Mock answer 2 ',
-    fakeAns3: 'Mock answer 3 ',
-    answer: 'Mock answer 4 '
+    answerList: {
+      a: 'Mock answer 1 ',
+      b: 'Mock answer 2 ',
+      c: 'Mock answer 3 ',
+      d: 'Mock answer 4 '
+    },
+    answer:'Mock answer 1 '
   },
   {
-    qid : 3,
+    qid : 1,
     question: 'What is a mock question?' ,
-    fakeAns1: 'Mock answer 1 ',
-    fakeAns2: 'Mock answer 2 ',
-    answer: 'Mock answer 3 ',
-    fakeAns3: 'Mock answer 4 '
+    answerList: {
+      a: 'Mock answer 1 ',
+      b: 'Mock answer 2 ',
+      c: 'Mock answer 3 ',
+      d: 'Mock answer 4 '
+    },
+    answer:'Mock answer 4 '
   },
   {
-    qid : 4,
+    qid : 1,
     question: 'What is a mock question?' ,
-    fakeAns1: 'Mock answer 1 ',
-    answer: 'Mock answer 2 ',
-    fakeAns2: 'Mock answer 3 ',
-    fakeAns3: 'Mock answer 4 '
-  },  {
-    qid : 5,
-    question: 'What is a mock question?' ,
-    fakeAns1: 'Mock answer 1 ',
-    answer: 'Mock answer 2 ',
-    fakeAns3: 'Mock answer 3 ',
-    fakeAns4: 'Mock answer 4 '
+    answerList: {
+      a: 'Mock answer 1 ',
+      b: 'Mock answer 2 ',
+      c: 'Mock answer 3 ',
+      d: 'Mock answer 4 '
+    },
+    answer:'Mock answer 2 '
   },
 ]

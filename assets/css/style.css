@@ -4,6 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
 }
 
 .title {
@@ -12,7 +13,7 @@ body {
   font-size: 4em;
   padding: auto;
   padding-top: 8%;
-  margin: 2px;
+  margin: 1.5%;
 }
 
 .bg-hallow {
@@ -22,5 +23,19 @@ body {
 
 .card {
   /* card will be the card the questions show up on. */
-  background-color: #3A405A;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  /* align-content: center; */
+  /* align-items: center; */
+  background-color: rgba(58, 64, 90, 0.8);
+  /* background-color: blueviolet; */
+}
+
+#start-button button {
+  margin: 5% auto;
+  padding: 10px 50px;
+  /* font-weight: bold; */
+  font-size: 18px;
+  border-radius: 40px;
 }
