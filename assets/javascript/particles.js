@@ -1,4 +1,4 @@
-// this is not might and i only just bearly get whats happening...
+//
 particlesJS("particles-js", {
   "particles": {
     "number": {
