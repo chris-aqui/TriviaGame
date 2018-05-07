@@ -17,6 +17,7 @@ var correct = 0;
 var incorrect = 0;
 
 //
+$('#game').hide();
 
 $( document ).ready(function() {
   console.log( "ready!" );
