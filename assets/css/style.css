@@ -39,3 +39,33 @@ body {
   font-size: 18px;
   border-radius: 40px;
 }
+
+/*  */
+
+.set {
+  padding: 1%;
+  margin: auto;
+}
+
+/*  */
+
+.game-card {
+  margin: 5% auto;
+  /* height: ; */
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.setAns {
+  width: 100%;
+  text-align: center;
+  padding: 10px 5px;
+  margin: auto;
+}
+
+.setAns:hover {
+  border: 2px solid #ccc;
+}

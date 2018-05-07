@@ -20,6 +20,7 @@ var incorrect = 0;
 
 $( document ).ready(function() {
   console.log( "ready!" );
+  $('#game').hide();
   $('#btnStart').on("click", function(){
     gameActive = true;
 
@@ -34,6 +35,7 @@ $( document ).ready(function() {
 //
 function start(){
  // will create the start buttong and do a condition go to to other function if pressed
+ $('#game').show();
  console.log('game started');
  $('#start-button').remove();
 genQuestion();
