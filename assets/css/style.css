@@ -1,6 +1,6 @@
 body {
   font-size: 16px;
-  color: #CED0CE;
+  color: #ced0ce;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,7 +8,7 @@ body {
 }
 
 .title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: 4em;
   padding: auto;
@@ -52,7 +52,7 @@ body {
 .game-card {
   margin: 5% auto;
   /* height: ; */
-  padding: auto;
+  padding: 1%;
   display: flex;
   flex-direction: column;
   align-items: center;
