@@ -56,32 +56,44 @@ function checker() {
   $('#answer1').on("click", function(){
     console.log(mock1);
     if (mock1 === answerHolder) {
+      correct++;
+      score++;
       console.log('this is the answer ' + answerHolder);
     } else {
+      incorrect++;
       console.log('this is not the answer');
     }
   });
   $('#answer2').on("click", function(){
     console.log(mock2);
     if (mock2 === answerHolder) {
+      correct++;
+      score++;
       console.log('this is the answer ' + answerHolder);
     } else {
+      incorrect++;
       console.log('this is not the answer');
     }
   });
   $('#answer3').on("click", function(){
     console.log(mock3);
     if (mock3 === answerHolder) {
+      correct++;
+      score++;
       console.log('this is the answer ' + answerHolder);
     } else {
+      incorrect++;
       console.log('this is not the answer');
     }
   });
   $('#answer4').on("click", function(){
     console.log(mock4);
     if (mock4 === answerHolder) {
+      correct++;
+      score++;
       console.log('this is the answer ' + answerHolder);
     } else {
+      incorrect++;
       console.log('this is not the answer');
     }
   });
