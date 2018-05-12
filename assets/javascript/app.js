@@ -4,8 +4,7 @@ var compAns = '';
 var userPick = '';
 var activeQset = [];
 var gameActive = 'false';
-var gameTime = 60;
-
+var gameTime = 2;
 //
 var questionHolder = randQset.question;
 var answerHolder = randQset.answer;
@@ -18,44 +17,40 @@ var score = 0;
 var correct = 0;
 var incorrect = 0;
 
-//
+// Ln 21 & 22 will hide the game time and game questions div on start up
 $('#time-display').hide();
 $('#game').hide();
 
 $( document ).ready(function() {
   console.log( "ready!" );
   // $('#game').hide();
+  // Ln 28, when the user presses the start button the game will begin
   $('#btnStart').on("click", function(){
     gameActive = true;
+// Ln 31: small delay between game idle and game start up
     setTimeout(() => {
+      // invoke the game start function
       start();
-    }, 500);
+    }, 800);
     //
   });
   //
 
 });
 //
-function timerDown (x){
-  for(var i = 60; i > 0; i--){
-    x--;
-    $('#time-display').text(gameTime);
-    console.log(x);
-    if(x === 0){
-      x = 0;
-    }
-  }
-  return x;
-}
-//
+
+// this function will update the screen to show questions
 function start(){
- // will create the start buttong and do a condition go to to other function if pressed
- $('#time-display').show();
+  // Ln 45 removes the start button
+ $('#start-button').remove();
+//  Ln 47 will show the game timer
+  $('#time-display').show();
+  // Ln 49 will show the game card with questions and answers
   $('#game').show();
   console.log('game started');
-  $('#start-button').remove();
+  // invoe the function that will populate the game card with randomly sectected questions
   genQuestion();
-  timerDown(gameTime);
+  // timerDown(gameTime);
 //
 
 }
@@ -67,6 +62,7 @@ function genQuestion(){
   $('#answer3').text(mock3);
   $('#answer4').text(mock4);
   //
+  timerDown(gameTime);
   $('#time-display').text(gameTime);
     console.log(questionHolder);
     checker();
@@ -134,10 +130,14 @@ function checker() {
       updateMe();
     }
   });
-
+  if(gameTime < 0){
+    console.log('Times up');
+    updateMe();
+  }
 }
 //
 function updateMe(){
+  console.log('called updateMe function');
   randQset = questions[Math.floor(Math.random() * questions.length)];
   questionHolder = randQset.question;
   answerHolder = randQset.answer;
@@ -146,7 +146,9 @@ function updateMe(){
   mock3 = randQset.answerList.c;
   mock4 = randQset.answerList.d;
   genQuestion();
-  gameTime = 60;
+  clearInterval(downTimev);
+  gameTime = 2;
+
 
   setTimeout(() => {
     $('#game').show();
@@ -155,3 +157,35 @@ function updateMe(){
   }, 200);
 }
 
+var downTimev;
+
+function timerDown (x){
+  downTimev = setInterval(function(){
+    if(x > 0){
+      x--;
+      $('#time-display').text(x);
+      console.log(x);
+    } else{
+      // x = 0;
+      // console.log(x);
+      // $('#time-display').text(x);
+      // console.log('Times up, updating');
+      // incorrect++;
+      // $('#game').hide();
+      // updateMe();
+    }
+    }, 800);
+    TimeCheck(gameTime);
+    //
+    return x;
+  }
+  //
+function TimeCheck(y){
+  if(y < 0){
+    console.log('Times up, updating');
+    // incorrect++;
+    // $('#game').hide();
+    // // clearInterval(downTimev);
+    updateMe();
+  }
+}

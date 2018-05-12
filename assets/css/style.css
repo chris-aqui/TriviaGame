@@ -70,3 +70,8 @@ body {
 .setAns:hover {
   border: 2px solid #ccc;
 }
+
+#time-display {
+  font-size: 1.5em;
+  color: yellow;
+}
