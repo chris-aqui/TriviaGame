@@ -49,9 +49,9 @@ var questions = [
     question: 'What Greek mathematician is considered the founder and father of Geometry?' ,
     answerList: {
       a: 'Euclid',
-      b: 'The Paralympic Games',
-      c: 'Pan American Games',
-      d: 'World Cup'
+      b: 'Archimedes',
+      c: 'Pythagoras',
+      d: 'Diophantus'
     },
     answer:'Euclid'
   },
@@ -59,10 +59,10 @@ var questions = [
     qid : 6,
     question: 'What is the name of the dog from the 1960s television cartoon The Jetsons?' ,
     answerList: {
-      a: 'America\'s Cup',
-      b: 'The Paralympic Games',
+      a: 'Comit',
+      b: 'Jupiter',
       c: 'Astro',
-      d: 'World Cup'
+      d: 'George'
     },
     answer:'Astro'
   },
@@ -70,9 +70,9 @@ var questions = [
     qid : 7,
     question: 'What is the heaviest naturally occurring element found on Earth?' ,
     answerList: {
-      a: 'America\'s Cup',
-      b: 'The Paralympic Games',
-      c: 'Pan American Games',
+      a: 'Plutonium-244 (244Pu) ',
+      b: 'Promethium (U61)',
+      c: 'Technetium (U43)',
       d: 'Uranium (U92)'
     },
     answer:'Uranium (U92)'
@@ -81,10 +81,10 @@ var questions = [
     qid : 8,
     question: 'Which book holds the record of being the most stolen book from public libraries?' ,
     answerList: {
-      a: 'America\'s Cup',
+      a: 'On the Road by Jack Kerouac',
       b: 'Guinness Book of World Records',
-      c: 'Pan American Games',
-      d: 'World Cup'
+      c: 'The Bible',
+      d: 'Sports Illustrated Swimsuit Edition'
     },
     answer:'Guinness Book of World Records'
   },
@@ -93,9 +93,9 @@ var questions = [
     question: 'What is the closest star to our own sun?' ,
     answerList: {
       a: 'Proxima Centauri',
-      b: 'The Paralympic Games',
-      c: 'Pan American Games',
-      d: 'World Cup'
+      b: 'Alpha Centauri A',
+      c: 'Tau Ceti',
+      d: 'Alpha Centauri B'
     },
     answer:'Proxima Centauri'
   },
@@ -103,10 +103,10 @@ var questions = [
     qid : 10,
     question: 'What is the name for the longest side of a right triangle?' ,
     answerList: {
-      a: 'America\'s Cup',
-      b: 'The Paralympic Games',
+      a: 'Catheti',
+      b: 'Singular',
       c: 'Hypotenuse',
-      d: 'World Cup'
+      d: 'Cathetus'
     },
     answer:'Hypotenuse'
   },

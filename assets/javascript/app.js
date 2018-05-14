@@ -4,7 +4,7 @@ var compAns = '';
 var userPick = '';
 var activeQset = [];
 var gameActive = 'false';
-var gameTime = 2;
+var gameTime = 5;
 //
 var questionHolder = randQset.question;
 var answerHolder = randQset.answer;
@@ -147,7 +147,7 @@ function updateMe(){
   mock4 = randQset.answerList.d;
   genQuestion();
   clearInterval(downTimev);
-  gameTime = 2;
+  gameTime = 5;
 
 
   setTimeout(() => {
@@ -165,18 +165,8 @@ function timerDown (x){
       x--;
       $('#time-display').text(x);
       console.log(x);
-    } else{
-      // x = 0;
-      // console.log(x);
-      // $('#time-display').text(x);
-      // console.log('Times up, updating');
-      // incorrect++;
-      // $('#game').hide();
-      // updateMe();
     }
     }, 800);
-    TimeCheck(gameTime);
-    //
     return x;
   }
   //
@@ -185,7 +175,7 @@ function TimeCheck(y){
     console.log('Times up, updating');
     // incorrect++;
     // $('#game').hide();
-    // // clearInterval(downTimev);
+    // clearInterval(downTimev);
     updateMe();
   }
 }
